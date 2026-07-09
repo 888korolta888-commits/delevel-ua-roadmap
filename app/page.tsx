@@ -15,6 +15,9 @@ const ROADMAP_ASSETS = {
   drakoshaWalking: `/roadmap/drakosha-walking-up.png?v=${ASSET_VERSION}`,
   drakoshaWalking2: `/roadmap/drakosha-walking-up2.png?v=${ASSET_VERSION}`,
   drakoshaFinish: `/roadmap/drakosha-finish.png?v=${ASSET_VERSION}`,
+  levelOneSign: `/roadmap/level-1-sign.png?v=${ASSET_VERSION}`,
+  levelTwoSign: `/roadmap/level-2-sign.png?v=${ASSET_VERSION}`,
+  levelThreeSign: `/roadmap/level-3-sign.png?v=${ASSET_VERSION}`,
 };
 
 type DragonPoint = {
@@ -32,6 +35,8 @@ type RoadmapStep = {
   overlayTitle: string;
   overlayText: string[];
   dragonSrc: string;
+  signSrc?: string;
+  signAlt?: string;
   desktop: DragonPoint;
   nest: DragonPoint;
   tablet: DragonPoint;
@@ -43,15 +48,16 @@ const STEPS: RoadmapStep[] = [
   {
     id: "start",
     eyebrow: "Roadmap-Demo",
-    title: "Дракончик вчиться читати",
-    text: "Українська демо-версія roadmap DeLevel — інтерактивний шлях до читання: від звуків і літер до перших слів і речень.",
+    title: "DeLevel: раннє читання німецькою",
+    text:
+      "DeLevel — це цифровий EdTech-продукт для дітей 4–8 років, який навчає читанню німецькою мовою в ігровій формі. Дитина рухається від перших букв і звуків до словосполучень, речень та сталих мовних конструкцій.",
     detail:
-      "Дитина спочатку слухає і бачить, потім розрізняє, будує слова й поступово переходить до читання зі змістом.",
-    overlayTitle: "Що показує ця roadmap?",
+      "DeLevel створений насамперед для дітей, які вивчають німецьку як другу мову. Система має три рівні: алфавітний — підготовка до читання, букварний — читання перших складів, слів і речень, та читацькі ключі — особливі букви й буквосполучення німецької.",
+    overlayTitle: "Унікальність та переваги DeLevel",
     overlayText: [
-      "Ця roadmap показує навчальний шлях «Дракончик вчиться читати»: від слухового впізнавання й літер до перших читацьких кроків і впевнених читацьких ключів.",
-      "Дракончик веде дитину крок за кроком через три етапи. Кожна станція показує, яка навичка формується і чому вона важлива для читання.",
-      "Зовні це залишається теплим ігровим простором, а всередині має чітку дидактичну структуру: спочатку звук і знак, потім слова й мовні моделі, далі складніші читацькі патерни.",
+      "DeLevel — це послідовна EdTech-лінійка з трьох пов’язаних рівнів. Граючи, дитина проходить шлях від слухового сприйняття до осмисленого читання.",
+      "Перший рівень готує до читання: дитина чує слово, бачить образ, упізнає літеру й пов’язує звук, картинку та дію. Другий рівень переводить цю базу в читання: склад, слово, словосполучення, Satzmuster і коротке речення.",
+      "Третій рівень закріплює Leseschlüssel — особливі читацькі ключі німецької: букви, буквосполучення, графеми й сталі моделі читання, які дитина впізнає, тренує і застосовує в ігрових міні-сценах.",
     ],
     dragonSrc: ROADMAP_ASSETS.drakoshaPresenting,
     desktop: { x: 25, y: 80, scale: 1.08 },
@@ -60,86 +66,96 @@ const STEPS: RoadmapStep[] = [
     phone: { x: 55, y: 94, scale: 1 },
     focusClass: styles.focusStart,
   },
-  {
-    id: "level-1",
-    eyebrow: "Етап 1 · Ліс літер",
-    title: "Звуки і літери",
-    text: "Дитина слухає слова, впізнає форми літер і поєднує звук, картинку та букву.",
-    detail:
-      "Етап 1 зміцнює слухове сприйняття й робить літери знайомими, впізнаваними знаками.",
-    overlayTitle: "Звуки і літери: слухати, бачити, впізнавати",
-    overlayText: [
-      "Етап 1 готує дитину до читання без вимоги вже читати слова. Дитина слухає, дивиться, впізнає форми літер і поєднує звук, картинку та знак.",
-      "Завдання тренують слухове розрізнення, зорове впізнавання та надійне зіставлення: що я чую, що я бачу, яка літера до цього належить.",
-      "Для дітей, які навчаються поступово, сенс підтримують голос, зображення й дія. Так формується надійна основа перед справжніми читацькими кроками.",
-    ],
-    dragonSrc: ROADMAP_ASSETS.drakoshaWalking,
-    desktop: { x: 48, y: 72, scale: 0.98 },
-    nest: { x: 48, y: 72, scale: 0.92 },
-    tablet: { x: 87, y: 58, scale: 0.95 },
-    phone: { x: 52, y: 61, scale: 0.92 },
-    focusClass: styles.focusLevelOne,
-  },
-  {
-    id: "level-2",
-    eyebrow: "Етап 2 · Селище слів",
-    title: "Перші кроки читання",
-    text: "Зі звуків складаються склади, зі складів — слова, зі слів — перші короткі мовні моделі.",
-    detail:
-      "Етап 2 системно веде від звука до складу, від складу до слова і до короткого змістового читання.",
-    overlayTitle: "Перші кроки читання: від звуків до слів",
-    overlayText: [
-      "Етап 2 веде від звука до складу, від букви до слова і від слова до перших коротких мовних моделей.",
-      "Дитина поступово будує слова, впізнає короткі службові слова й читає прості структури з сильною опорою на зображення.",
-      "Граматика не пояснюється як правило. Повторювані форми переживаються як зрозумілі читацькі моделі, що допомагають дитині читати зі змістом.",
-    ],
-    dragonSrc: ROADMAP_ASSETS.drakoshaWalking2,
-    desktop: { x: 63, y: 52, scale: 0.92 },
-    nest: { x: 62, y: 53, scale: 0.84 },
-    tablet: { x: 75, y: 45, scale: 0.88 },
-    phone: { x: 72, y: 45, scale: 0.84 },
-    focusClass: styles.focusLevelTwo,
-  },
+ {
+  id: "level-1",
+  eyebrow: "Етап 1 · Ліс літер",
+  title: "Добукварний етап",
+  text:
+    "Дитина знайомиться з літерами, вчиться розпізнавати їхню форму та чути початковий звук у слові.",
+  detail:
+    "",
+overlayTitle: "Ліс літер: підготовка до читання",
+overlayText: [
+  "Перший рівень DeLevel створює основу для читання: дитина впізнає німецькі літери, чує початкові звуки слів і пов’язує букву з конкретним образом.",
+  "Кожна літера вводиться через коротку серію ігор: дитина слухає слово, знаходить потрібну літеру, розрізняє її серед інших і виконує просту дію.",
+  "Аудіо, зображення та ігрові завдання дають зрозумілий контекст без граматичного перевантаження.",
+   "Ігри-вправи на трейсинг допомагають дитині зрозуміти форму літери та запам’ятати напрям її написання.",
+],
+  dragonSrc: ROADMAP_ASSETS.drakoshaWalking,
+  signSrc: ROADMAP_ASSETS.levelOneSign,
+  signAlt: "Stufe 1 Buchstabenwald",
+  desktop: { x: 48, y: 72, scale: 0.98 },
+  nest: { x: 48, y: 72, scale: 0.92 },
+  tablet: { x: 87, y: 58, scale: 0.95 },
+  phone: { x: 52, y: 61, scale: 0.92 },
+  focusClass: styles.focusLevelOne,
+},
+{
+  id: "level-2",
+  eyebrow: "Етап 2 · Містечко слів",
+  title: "Букварний етап",
+  text:
+    "Після повторення літер і звуків дитина переходить до читання: складає склади, слова, словосполучення та речення, розуміє прочитане й засвоює перші граматичні конструкції.",
+  detail: "",
+  overlayTitle: "Містечко слів: від складу до речення",
+  overlayText: [
+    "Другий рівень веде дитину від простих складів до коротких слів, словосполучень, речень і сталих конструкцій, які можна прочитати, почути й співвіднести з картинкою.",
+    "Граматика подається через зрозумілу мовну дію. Слова und, ist, hat, артиклі й прості питання допомагають засвоїти мовленнєві патерни без перевантаження термінами.",
+  ],
+  dragonSrc: ROADMAP_ASSETS.drakoshaWalking2,
+  signSrc: ROADMAP_ASSETS.levelTwoSign,
+  signAlt: "Stufe 2 Wortdorf",
+  desktop: { x: 63, y: 52, scale: 0.92 },
+  nest: { x: 62, y: 53, scale: 0.84 },
+  tablet: { x: 75, y: 45, scale: 0.88 },
+  phone: { x: 72, y: 45, scale: 0.84 },
+  focusClass: styles.focusLevelTwo,
+},
   {
     id: "level-3",
-    eyebrow: "Етап 3 · Читацькі ключі",
-    title: "Ключі до читання",
-    text: "Дитина відкриває поєднання літер і особливі знаки як ключі до впевненого читання.",
+    eyebrow: "Етап 3 · Особливі букви",
+    title: "Особливі ключі читання",
+    text:
+      "Третій рівень відкриває особливі букви та буквосполучення.",
     detail:
-      "Третій етап упорядковує складніші читацькі патерни й допомагає впізнавати їх без випадковості.",
-    overlayTitle: "Ключі до читання: впевнено впізнавати патерни",
-    overlayText: [
-      "Етап 3 тренує складніші моделі письма: поєднання літер, особливі знаки й читацькі контрасти.",
-      "Ключі організовані не випадково, а як зрозуміла система. Дитина бачить знак, чує відповідний звук, читає слово й розуміє різницю між схожими моделями.",
-      "Мета — повторювана читацька впевненість: побачити знак, упізнати звук, прочитати слово, зрозуміти контраст і втримати сенс.",
-    ],
+      "",
+overlayTitle: "Особливі ключі читання",
+overlayText: [
+  "Третій рівень присвячений особливим графемам і буквосполученням німецької мови, які потребують окремого тренування.",
+  "Дитина опановує ці ключі через знайому схему: бачить знак у слові, чує його звучання, пов’язує з опорним образом і тренує в коротких ігрових завданнях.",
+  "Sch, ch, pf, ei, ie, au, eu, äu, ß та інші складні елементи поступово стають упізнаваними читацькими опорами.",
+],
     dragonSrc: ROADMAP_ASSETS.drakoshaWalking,
+    signSrc: ROADMAP_ASSETS.levelThreeSign,
+    signAlt: "Stufe 3 Zauberschlüssel",
     desktop: { x: 64, y: 35, scale: 0.74 },
     nest: { x: 64, y: 36, scale: 0.66 },
     tablet: { x: 91, y: 33, scale: 0.78 },
     phone: { x: 75, y: 30, scale: 0.72 },
     focusClass: styles.focusLevelThree,
   },
-  {
-    id: "whole-way",
-    eyebrow: "Логіка навчання",
-    title: "Цілісний шлях до читання",
-    text: "Три етапи утворюють єдиний маршрут: від слуху до письма, від знака до слова, від слова до змісту.",
-    detail:
-      "Ліс літер готує основу, Селище слів будує читання, Читацькі ключі стабілізують складніші патерни.",
-    overlayTitle: "Навчальний шлях у трьох етапах",
-    overlayText: [
-      "Звуки і літери закладають основу: дитина слухає, бачить, упізнає й поєднує.",
-      "Перші кроки читання будують із цієї основи читання: звуки, склади, слова й короткі мовні моделі поступово з’єднуються.",
-      "Ключі до читання стабілізують навичку: складніші поєднання та особливі знаки впізнаються впевнено й повторювано.",
-    ],
-    dragonSrc: ROADMAP_ASSETS.drakoshaFinish,
-    desktop: { x: 65, y: 22, scale: 0.71 },
-    nest: { x: 65, y: 24, scale: 0.62 },
-    tablet: { x: 88, y: 24, scale: 0.72 },
-    phone: { x: 75, y: 22, scale: 0.66 },
-    focusClass: styles.focusFinish,
-  },
+{
+  id: "whole-way",
+  eyebrow: "Логіка навчання",
+  title: "Навчальний маршрут DeLevel",
+  text:
+    "DeLevel веде дитину через навчальні ігри, блокнот прогресу, нагороди та короткі мультфільми.",
+  detail:
+    "Ігри допомагають вчитися, блокнот прогресу фіксує пройдений шлях, нагороди підтримують інтерес, а мультфільми закріплюють знайомі слова й образи в сюжеті.",
+  overlayTitle: "Як це працює",
+  overlayText: [
+    "У DeLevel навчання має зрозумілу послідовність: дитина проходить ігрові завдання, відкриває нові елементи маршруту й бачить власний прогрес.",
+    "Після виконання завдань результат з’являється в блокноті прогресу. Це особистий простір дитини, де видно, що вже пройдено і які етапи відкриті.",
+    "Нагороди позначають завершені етапи та роблять результат видимим. Дитина бачить, що її дії приводять до відкриття нового елемента.",
+    "Короткі мультфільми повертають знайомі слова, персонажів та образи в сюжет. Так DeLevel поєднує навчальні вправи, прогрес і повторення в цілісний освітній маршрут.",
+  ],
+  dragonSrc: ROADMAP_ASSETS.drakoshaFinish,
+  desktop: { x: 65, y: 22, scale: 0.71 },
+  nest: { x: 65, y: 24, scale: 0.62 },
+  tablet: { x: 88, y: 24, scale: 0.72 },
+  phone: { x: 75, y: 22, scale: 0.66 },
+  focusClass: styles.focusFinish,
+},
 ];
 
 export default function DemoLevelPage() {
@@ -195,11 +211,12 @@ export default function DemoLevelPage() {
             />
           </Link>
 
-          <nav className={styles.nav} aria-label="Головна навігація">
-            <Link href="/potentsial">Потенціал</Link>
-            <Link href="/dydaktyka">Дидактика</Link>
-            <Link href="/kontakty">Контакти</Link>
-          </nav>
+<nav className={styles.nav} aria-label="Головна навігація">
+  <Link href="/dlya-koho">Для кого DeLevel</Link>
+  <Link href="/potentsial">Потенціал</Link>
+  <Link href="/dydaktyka">Дидактика</Link>
+  <Link href="/kontakty">Контакти</Link>
+</nav>
         </header>
 
         <div className={styles.mapLayer} aria-hidden="true">
@@ -232,29 +249,43 @@ export default function DemoLevelPage() {
         </div>
 
         {isInfoCardOpen ? (
-          <article className={styles.infoCard}>
-            <button
-              className={styles.infoCloseButton}
-              type="button"
-              aria-label="Закрити інформаційну картку"
-              onClick={() => setIsInfoCardOpen(false)}
-            >
-              ×
-            </button>
+          <div className={styles.infoWrap}>
+            {activeStep.signSrc ? (
+              <img
+                className={styles.levelSign}
+                src={activeStep.signSrc}
+                alt={activeStep.signAlt ?? ""}
+                draggable={false}
+              />
+            ) : null}
 
-            <p className={styles.eyebrow}>{activeStep.eyebrow}</p>
-            <h1>{activeStep.title}</h1>
-            <p className={styles.mainText}>{activeStep.text}</p>
-            <p className={styles.detailText}>{activeStep.detail}</p>
+            <article className={styles.infoCard}>
+              <button
+                className={styles.infoCloseButton}
+                type="button"
+                aria-label="Закрити інформаційну картку"
+                onClick={() => setIsInfoCardOpen(false)}
+              >
+                ×
+              </button>
 
-            <button
-              className={styles.moreButton}
-              type="button"
-              onClick={() => setIsOverlayOpen(true)}
-            >
-              Докладніше
-            </button>
-          </article>
+              <p className={styles.eyebrow}>{activeStep.eyebrow}</p>
+              <h1>{activeStep.title}</h1>
+              <p className={styles.mainText}>{activeStep.text}</p>
+
+              {activeStep.detail ? (
+                <p className={styles.detailText}>{activeStep.detail}</p>
+              ) : null}
+
+              <button
+                className={styles.moreButton}
+                type="button"
+                onClick={() => setIsOverlayOpen(true)}
+              >
+                Докладніше
+              </button>
+            </article>
+          </div>
         ) : (
           <button
             className={styles.infoOpenButton}
