@@ -1,0 +1,99 @@
+.switcher {
+  position: fixed;
+  left: 28px;
+  bottom: 24px;
+  z-index: 90;
+  min-height: 46px;
+  padding: 4px;
+  border: 1px solid rgba(139, 94, 48, 0.28);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 252, 244, 0.94),
+      rgba(246, 229, 197, 0.86)
+    );
+  box-shadow:
+    0 12px 24px rgba(69, 43, 19, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  user-select: none;
+}
+
+.option {
+  min-width: 32px;
+  min-height: 36px;
+  padding: 0 8px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(91, 63, 32, 0.72);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.option {
+  transition:
+    color 160ms ease,
+    background 160ms ease;
+}
+
+a.option:hover,
+a.option:focus-visible {
+  color: #2f6f48;
+  background: rgba(255, 253, 244, 0.76);
+  outline: none;
+}
+
+.optionActive {
+  color: #fffdf0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(126, 183, 107, 0.94),
+      rgba(75, 137, 69, 0.94)
+    );
+  box-shadow:
+    0 6px 12px rgba(47, 94, 42, 0.2),
+    inset 0 1px 0 rgba(222, 255, 202, 0.62);
+}
+
+.optionDisabled {
+  color: rgba(91, 63, 32, 0.38);
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+  .switcher {
+    left: 14px;
+    bottom: 14px;
+    min-height: 40px;
+    padding: 3px;
+    gap: 2px;
+  }
+
+  .option {
+    min-width: 27px;
+    min-height: 32px;
+    padding: 0 6px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) and (orientation: portrait) {
+  .option {
+    min-width: 25px;
+    padding: 0 5px;
+    font-size: 9px;
+  }
+}
