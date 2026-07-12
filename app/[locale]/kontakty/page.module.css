@@ -51,6 +51,7 @@
 .hero,
 .partnerSection,
 .valueSection,
+.storySection,
 .contactSection {
   position: relative;
   z-index: 2;
@@ -109,12 +110,14 @@
 
 .partnerSection,
 .valueSection,
+.storySection,
 .contactSection {
   margin-top: 28px;
 }
 
 .partnerSection,
-.valueSection {
+.valueSection,
+.storySection {
   padding: 26px;
   border: 1px solid rgba(127, 88, 42, 0.2);
   border-radius: 36px;

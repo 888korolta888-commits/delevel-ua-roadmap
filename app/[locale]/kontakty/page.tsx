@@ -10,6 +10,15 @@ import styles from "./page.module.css";
 const CONTACT_EMAIL = "kontakt@example.com";
 const LINKEDIN_URL = "https://www.linkedin.com/in/dein-profil";
 
+const GERMAN_ORIGIN_STORY = {
+  title: "Wie DeLevel entstanden ist",
+  paragraphs: [
+    "DeLevel ist aus eigener Migrationserfahrung, gelebter Mehrsprachigkeit und der intensiven Auseinandersetzung mit dem Erwerb der deutschen Sprache entstanden. Ich kenne den Moment, in dem eine neue Sprache zunächst wie eine geschlossene Struktur wirkt – und den Prozess, in dem aus fremden Lauten Orientierung, Sicherheit und schließlich Zugehörigkeit entsteht.",
+    "Bei der Entwicklung von DeLevel habe ich diese persönliche Perspektive mit didaktischer Konzeption, visueller Gestaltung und digitaler Produktentwicklung verbunden. Im Mittelpunkt stand die Frage, wie Kinder deutsche Schrift nicht als zusätzliche Hürde, sondern als verständlichen und motivierenden Lernweg erleben können.",
+    "Die persönliche Entstehungsgeschichte erklärt den Ausgangspunkt des Projekts. DeLevel selbst ist jedoch für eine breitere Nutzung konzipiert: als strukturierte digitale Leseförderung für mehrsprachige Kinder, Familien und Bildungspartner.",
+  ],
+};
+
 const PAGE_CONTENT = {
   uk: {
     heroTitle: "Партнерство для розвитку й масштабування DeLevel",
@@ -247,6 +256,25 @@ export default async function KontaktyPage({
           ))}
         </div>
       </section>
+
+      {locale === "de" ? (
+        <section
+          className={styles.storySection}
+          aria-labelledby="story-title"
+        >
+          <div className={styles.sectionHeader}>
+            <h2 id="story-title">
+              {GERMAN_ORIGIN_STORY.title}
+            </h2>
+          </div>
+
+          <div className={styles.storyCard}>
+            {GERMAN_ORIGIN_STORY.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section
         className={styles.contactSection}
