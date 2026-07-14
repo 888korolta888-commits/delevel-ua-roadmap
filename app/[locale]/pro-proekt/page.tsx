@@ -104,25 +104,25 @@ const PAGE_CONTENT = {
       "Три рівні DeLevel — це не окремі набори ігор. Кожен рівень виконує власне навчальне завдання й готує перехід до наступного. Дитина рухається зрозумілим і повторюваним маршрутом, а дорослий може бачити навчальну мету, методичну структуру та помітний результат кожної дії.",
     systemSlides: [
       {
-        src: slidePath("uk", "01-system.png"),
+        src: slidePath("uk", "01-system.webp"),
         title: "DeLevel. Шлях до читання німецькою",
         alt:
           "DeLevel для дітей, які вивчають німецьку як другу мову",
       },
       {
-        src: slidePath("uk", "02-system.png"),
+        src: slidePath("uk", "02-system.webp"),
         title: "Один маршрут — три рівні навчання",
         alt:
           "Три пов’язані рівні DeLevel від звуків і букв до моделей німецького читання",
       },
       {
-        src: slidePath("uk", "03-child-journey.png"),
+        src: slidePath("uk", "03-child-journey.webp"),
         title: "Прогрес перетворюється на творчий цикл",
         alt:
           "Дитина досліджує карту букви, проходить ігри, отримує наліпку, створює мультфільм і зберігає його в Кіно",
       },
       {
-        src: slidePath("uk", "04-information-layers.png"),
+        src: slidePath("uk", "04-information-layers.webp"),
         title: "Два інформаційні рівні",
         alt:
           "Дитина бачить гру, а дорослий може бачити навчальну мету, методику та прогрес",
@@ -142,7 +142,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "05-level-1-reproducible-design.png",
+              "05-level-1-reproducible-design.webp",
             ),
             title: "Відтворювана система ігор",
             alt:
@@ -151,7 +151,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "06-level-1-buchstabenwald.png",
+              "06-level-1-buchstabenwald.webp",
             ),
             title: "Дві лінії ігор готують дитину до читання",
             alt:
@@ -160,7 +160,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "07-level-1-listening-templates.png",
+              "07-level-1-listening-templates.webp",
             ),
             title: "Шаблони слухових ігор",
             alt:
@@ -178,7 +178,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "08-level-2-wortdorf.png",
+              "08-level-2-wortdorf.webp",
             ),
             title: "Ігри перетворюють декодування на читання",
             alt:
@@ -187,7 +187,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "09-level-2-cumulative-design.png",
+              "09-level-2-cumulative-design.webp",
             ),
             title: "Одна послідовність — шість етапів",
             alt:
@@ -196,7 +196,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "10-level-2-grammar-progression.png",
+              "10-level-2-grammar-progression.webp",
             ),
             title: "Граматика зростає через ігрові моделі",
             alt:
@@ -205,7 +205,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "11-level-2-grammar-families.png",
+              "11-level-2-grammar-families.webp",
             ),
             title: "Сталі мовні рамки поступово розширюються",
             alt:
@@ -214,7 +214,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "12-level-2-phonemic-development.png",
+              "12-level-2-phonemic-development.webp",
             ),
             title: "Слухове сприйняття стає точнішим",
             alt:
@@ -232,7 +232,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "13-level-3-zauberschluessel.png",
+              "13-level-3-zauberschluessel.webp",
             ),
             title: "Моделі читання стають ключами",
             alt:
@@ -241,7 +241,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "14-level-3-key-houses.png",
+              "14-level-3-key-houses.webp",
             ),
             title: "Три будинки впорядковують ключі",
             alt:
@@ -250,7 +250,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "uk",
-              "15-level-3-complete-key.png",
+              "15-level-3-complete-key.webp",
             ),
             title: "Повний маршрут одного ключа",
             alt:
@@ -265,7 +265,7 @@ const PAGE_CONTENT = {
     finalSlide: {
       src: slidePath(
         "uk",
-        "16-one-system-three-worlds.png",
+        "16-one-system-three-worlds.webp",
       ),
       title: "Одна система читання. Три світи.",
       alt:
@@ -302,25 +302,25 @@ const PAGE_CONTENT = {
       "Die drei Stufen sind keine voneinander getrennten Spielsammlungen. Jede Stufe erfüllt eine eigene didaktische Aufgabe und bereitet die nächste systematisch vor. Das Kind erlebt einen klaren und wiederholbaren Lernweg, während Erwachsene Lernziel, methodische Struktur und sichtbaren Fortschritt nachvollziehen können.",
     systemSlides: [
       {
-        src: slidePath("de", "01-system.png"),
+        src: slidePath("de", "01-system.webp"),
         title: "DeLevel. Ein Weg zum Lesen auf Deutsch",
         alt:
           "DeLevel für Kinder, die Deutsch als Zweitsprache lernen",
       },
       {
-        src: slidePath("de", "02-system.png"),
+        src: slidePath("de", "02-system.webp"),
         title: "Ein Lernweg — drei aufeinander aufbauende Stufen",
         alt:
           "Drei verbundene DeLevel-Stufen vom Laut und Buchstaben bis zu deutschen Lesemustern",
       },
       {
-        src: slidePath("de", "03-child-journey.png"),
+        src: slidePath("de", "03-child-journey.webp"),
         title: "Fortschritt wird zu einem kreativen Kreislauf",
         alt:
           "Das Kind erkundet eine Buchstabenkarte, löst Spiele, erhält einen Sticker, erstellt einen Kurzfilm und speichert ihn im Kino",
       },
       {
-        src: slidePath("de", "04-information-layers.png"),
+        src: slidePath("de", "04-information-layers.webp"),
         title: "Zwei Informationsebenen",
         alt:
           "Das Kind sieht ein Spiel, während Erwachsene Lernziel, Methode und Fortschritt sehen können",
@@ -340,7 +340,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "05-level-1-reproducible-design.png",
+              "05-level-1-reproducible-design.webp",
             ),
             title: "Ein reproduzierbares Spielsystem",
             alt:
@@ -349,7 +349,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "06-level-1-buchstabenwald.png",
+              "06-level-1-buchstabenwald.webp",
             ),
             title: "Zwei Spiellinien bereiten auf das Lesen vor",
             alt:
@@ -358,7 +358,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "07-level-1-listening-templates.png",
+              "07-level-1-listening-templates.webp",
             ),
             title: "Vorlagen für Hörspiele",
             alt:
@@ -376,7 +376,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "08-level-2-wortdorf.png",
+              "08-level-2-wortdorf.webp",
             ),
             title: "Spiele machen Dekodieren zu sinnvollem Lesen",
             alt:
@@ -385,7 +385,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "09-level-2-cumulative-design.png",
+              "09-level-2-cumulative-design.webp",
             ),
             title: "Eine Abfolge — sechs Lernphasen",
             alt:
@@ -394,7 +394,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "10-level-2-grammar-progression.png",
+              "10-level-2-grammar-progression.webp",
             ),
             title: "Grammatik wächst durch spielbare Muster",
             alt:
@@ -403,7 +403,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "11-level-2-grammar-families.png",
+              "11-level-2-grammar-families.webp",
             ),
             title: "Stabile Sprachrahmen werden schrittweise erweitert",
             alt:
@@ -412,7 +412,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "12-level-2-phonemic-development.png",
+              "12-level-2-phonemic-development.webp",
             ),
             title: "Das Hören wird zunehmend präziser",
             alt:
@@ -430,7 +430,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "13-level-3-zauberschluessel.png",
+              "13-level-3-zauberschluessel.webp",
             ),
             title: "Lesemuster werden zu Schlüsseln",
             alt:
@@ -439,7 +439,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "14-level-3-key-houses.png",
+              "14-level-3-key-houses.webp",
             ),
             title: "Drei Häuser ordnen die Leseschlüssel",
             alt:
@@ -448,7 +448,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "de",
-              "15-level-3-complete-key.png",
+              "15-level-3-complete-key.webp",
             ),
             title: "Der vollständige Weg eines Leseschlüssels",
             alt:
@@ -463,7 +463,7 @@ const PAGE_CONTENT = {
     finalSlide: {
       src: slidePath(
         "de",
-        "16-one-system-three-worlds.png",
+        "16-one-system-three-worlds.webp",
       ),
       title: "Ein Lesesystem. Drei Welten.",
       alt:
@@ -500,25 +500,25 @@ const PAGE_CONTENT = {
       "The three levels are not separate collections of games. Each level performs a distinct instructional task and prepares the next one. The child experiences a clear, repeatable journey, while adults can also see the learning purpose, methodological structure and visible progress behind each activity.",
     systemSlides: [
       {
-        src: slidePath("en", "01-system.png"),
+        src: slidePath("en", "01-system.webp"),
         title: "DeLevel. A Guided Journey into German Reading",
         alt:
           "For children learning German as a second language",
       },
       {
-        src: slidePath("en", "02-system.png"),
+        src: slidePath("en", "02-system.webp"),
         title: "One Connected Journey, Three Learning Levels",
         alt:
           "DeLevel system with three connected learning levels from sound and letter recognition to German reading patterns",
       },
       {
-        src: slidePath("en", "03-child-journey.png"),
+        src: slidePath("en", "03-child-journey.webp"),
         title: "Progress Becomes a Creative Cycle",
         alt:
           "The child explores a letter card, completes games, earns a sticker, creates a mini-film and saves it in Kino",
       },
       {
-        src: slidePath("en", "04-information-layers.png"),
+        src: slidePath("en", "04-information-layers.webp"),
         title: "Two Information Layers",
         alt:
           "The child sees an accessible game while the adult can view the learning purpose, method and progress",
@@ -538,7 +538,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "05-level-1-reproducible-design.png",
+              "05-level-1-reproducible-design.webp",
             ),
             title: "A Reproducible Game System",
             alt:
@@ -547,7 +547,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "06-level-1-buchstabenwald.png",
+              "06-level-1-buchstabenwald.webp",
             ),
             title: "Two Game Lines Prepare the Child to Read",
             alt:
@@ -556,7 +556,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "07-level-1-listening-templates.png",
+              "07-level-1-listening-templates.webp",
             ),
             title: "Listening Game Templates",
             alt:
@@ -574,7 +574,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "08-level-2-wortdorf.png",
+              "08-level-2-wortdorf.webp",
             ),
             title: "Games Turn Decoding into Meaningful Reading",
             alt:
@@ -583,7 +583,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "09-level-2-cumulative-design.png",
+              "09-level-2-cumulative-design.webp",
             ),
             title: "One Sequence, Six Learning Stages",
             alt:
@@ -592,7 +592,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "10-level-2-grammar-progression.png",
+              "10-level-2-grammar-progression.webp",
             ),
             title: "Grammar Grows Through Playable Patterns",
             alt:
@@ -601,7 +601,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "11-level-2-grammar-families.png",
+              "11-level-2-grammar-families.webp",
             ),
             title: "Stable Language Frames Expand Step by Step",
             alt:
@@ -610,7 +610,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "12-level-2-phonemic-development.png",
+              "12-level-2-phonemic-development.webp",
             ),
             title: "Listening Becomes More Precise",
             alt:
@@ -628,7 +628,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "13-level-3-zauberschluessel.png",
+              "13-level-3-zauberschluessel.webp",
             ),
             title: "Reading Patterns Become Keys",
             alt:
@@ -637,7 +637,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "14-level-3-key-houses.png",
+              "14-level-3-key-houses.webp",
             ),
             title: "Three Houses Organise the Reading Keys",
             alt:
@@ -646,7 +646,7 @@ const PAGE_CONTENT = {
           {
             src: slidePath(
               "en",
-              "15-level-3-complete-key.png",
+              "15-level-3-complete-key.webp",
             ),
             title: "One Complete Reading Key",
             alt:
@@ -661,7 +661,7 @@ const PAGE_CONTENT = {
     finalSlide: {
       src: slidePath(
         "en",
-        "16-one-system-three-worlds.png",
+        "16-one-system-three-worlds.webp",
       ),
       title: "One Reading System. Three Worlds.",
       alt:
