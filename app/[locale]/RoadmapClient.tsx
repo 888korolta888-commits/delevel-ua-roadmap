@@ -67,12 +67,13 @@ const UI_TEXT = {
     homeAria: "На головну",
     logoAlt: "Дракончик вчиться читати",
     navAria: "Головна навігація",
-    nav: {
-      audience: "Аудиторія",
-      potential: "Потенціал",
-      didactics: "Методика",
-      contact: "Контакти",
-    },
+nav: {
+  audience: "Аудиторія",
+  project: "Проєкт",
+  didactics: "Методика",
+  potential: "Потенціал",
+  contact: "Контакти",
+},
     closeInfoAria: "Закрити інформаційну картку",
     more: "Докладніше",
     info: "Інфо",
@@ -90,12 +91,13 @@ const UI_TEXT = {
     homeAria: "Zur Startseite",
     logoAlt: "Drachi lernt Lesen",
     navAria: "Hauptnavigation",
-    nav: {
-      audience: "Zielgruppe",
-      potential: "Potenzial",
-      didactics: "Didaktik",
-      contact: "Kontakt",
-    },
+nav: {
+  audience: "Zielgruppe",
+  project: "Projekt",
+  didactics: "Didaktik",
+  potential: "Potenzial",
+  contact: "Kontakt",
+},
     closeInfoAria: "Infokarte schließen",
     more: "Mehr erfahren",
     info: "Info",
@@ -113,12 +115,13 @@ const UI_TEXT = {
     homeAria: "Go to the home page",
     logoAlt: "Drachi lernt Lesen",
     navAria: "Main navigation",
-    nav: {
-      audience: "Target Group",
-      potential: "Potential",
-      didactics: "Methodology",
-      contact: "Contact",
-    },
+nav: {
+  audience: "Target Group",
+  project: "Project",
+  didactics: "Methodology",
+  potential: "Potential",
+  contact: "Contact",
+},
     closeInfoAria: "Close information card",
     more: "Learn more",
     info: "Info",
@@ -138,12 +141,13 @@ const UI_TEXT = {
     homeAria: string;
     logoAlt: string;
     navAria: string;
-    nav: {
-      audience: string;
-      potential: string;
-      didactics: string;
-      contact: string;
-    };
+nav: {
+  audience: string;
+  project: string;
+  didactics: string;
+  potential: string;
+  contact: string;
+};
     closeInfoAria: string;
     more: string;
     info: string;
@@ -570,21 +574,25 @@ export default function RoadmapClient({
             className={styles.nav}
             aria-label={ui.navAria}
           >
-            <Link href={localizedPath(locale, "/dlya-koho")}>
-              {ui.nav.audience}
-            </Link>
+<Link href={localizedPath(locale, "/dlya-koho")}>
+  {ui.nav.audience}
+</Link>
 
-            <Link href={localizedPath(locale, "/potentsial")}>
-              {ui.nav.potential}
-            </Link>
+<Link href={localizedPath(locale, "/pro-proekt")}>
+  {ui.nav.project}
+</Link>
 
-            <Link href={localizedPath(locale, "/dydaktyka")}>
-              {ui.nav.didactics}
-            </Link>
+<Link href={localizedPath(locale, "/dydaktyka")}>
+  {ui.nav.didactics}
+</Link>
 
-            <Link href={localizedPath(locale, "/kontakty")}>
-              {ui.nav.contact}
-            </Link>
+<Link href={localizedPath(locale, "/potentsial")}>
+  {ui.nav.potential}
+</Link>
+
+<Link href={localizedPath(locale, "/kontakty")}>
+  {ui.nav.contact}
+</Link>
 
             <div
               className={styles.languageSwitcher}
